@@ -1,0 +1,34 @@
+<div class="exchange-box">
+  <div class="card">
+    <div class="card-header text-center">
+      Simule sua conversão
+    </div>
+    <div class="card-block">
+      <%=form_tag exchange_path, method: :post, id: 'exchange_form' do %>
+        <div class="local-currency">
+          <div class="form-group">
+            <p class="title">Moeda Local</p>
+            <%=select_tag :currency, options_for_select(current_select, 'BRL'), class: 'form-control', id: 'currency' %>
+          </div>
+          <div class="form-group">
+            <%=number_field_tag :quantity, nil, class: 'form-control', placeholder: 'Quantidade($10)', min: 1, step: 0.01 %>
+          </div>
+        </div>
+        <div class="destination-currency">
+          <div class="form-group">
+            <p class="title">Moeda Pretendida</p>
+            <%=select_tag :currency_destination, options_for_select(current_select,'EUR'), class: 'form-control', id: 'currency_destination' %>
+          </div>
+          <div class="form-group">
+            <%=text_field_tag :result, nil, class: 'form-control', placeholder: 'Resultado', readonly: true %>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <%=button_tag :converter, class: 'btn btn-primary btn-exchange' %>
+        </div>
+        
+      <%end%>
+    </div>
+  </div>
+</div>
