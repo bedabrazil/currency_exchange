@@ -19,5 +19,8 @@
             border-color: #5bc0de;
             border-radius: 0;
         }
+        input[readonly] {
+            background-color: white;
+        }
     }
 }
