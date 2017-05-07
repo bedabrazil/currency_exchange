@@ -1,10 +1,15 @@
 .exchange-box {
+    .header {
+        .card-header {
+            background-color: #fff!important;
+        }
+    }
     .card {
         border: 0;
         .card-header {
-            background-color: #878d99;
+            background-color: #f9cd00;
             border-radius: 0;
-            color: white;
+            color: black;
             font-weight: 700;
         }
         .card-block {
@@ -26,6 +31,9 @@
         input[readonly] {
             background-color: white;
         }
+        input::placeholder {
+            font-size: .859em
+        }
         .btn-exchange {
             background-color: #5bc0de;
             border-color: #5bc0de;
@@ -35,15 +43,11 @@
         .img-swap-arrow {
             margin-left: -12px;
             border-radius: 500px;
-            background-color: #40ACFF/*DFF0D8#2196F3*/
-            ;
+            background-color: #f9cd00;
+            border: 1px solid #f9cd00;
         }
         .swap-arrow {
             cursor: pointer;
-            box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3);
-        }
-        .swap-arrow:hover {
-            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
         }
     }
     .loading {
