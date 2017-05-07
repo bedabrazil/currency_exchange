@@ -19,8 +19,11 @@ $(document).ready ->
         $('#addon-destination').text(e.value)
     if $('#quantity').val()
       getConversion()
+  $('form').on 'focus', '#quantity', ->
+    swapCoin()
   $('form').on 'blur', '#quantity', ->
-    getConversion()
+    if $(this).val()
+      getConversion()
   getConversion = ->
     form = $('#exchange_form')
     if form.attr('action') == '/exchange'
@@ -43,5 +46,8 @@ $(document).ready ->
     $('#addon-local').text(currency_left_selected.val())
     $('#addon-destination').text(currency_right_selected.val())
  
-    
-    
+  $(document).ajaxStart ->
+    $('#result').addClass('loading')
+  $(document).ajaxStop ->
+    $('#result').removeClass('loading')
+  find = ->

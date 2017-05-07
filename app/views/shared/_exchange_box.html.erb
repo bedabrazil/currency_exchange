@@ -8,7 +8,7 @@
         <strong class="title">Escolha suas moedas</strong> 
       </div>
       <%=form_tag exchange_path, method: :post, id: 'exchange_form' do %>
-        <div class="form-group row">       
+        <div class="form-group row form-select">       
           <div class="col-5">
             <%=select_tag :currency, options_for_select(current_select, 'BRL'), class: 'form-control', id: 'currency' %>
           </div>
