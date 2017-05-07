@@ -1,5 +1,5 @@
 body {
-    background: image-url('/background-img.jpg') no-repeat center center fixed!important;
+    background: image-url('/bg-exchange.jpg') no-repeat center center fixed!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,8 +21,8 @@ body {
         padding-bottom: 10px;
     }
     .logo-img {
-        background-color: #fff;
-        padding: 20px;
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
         border-radius: 400px;
     }
 }
