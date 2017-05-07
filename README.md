@@ -16,6 +16,10 @@ Este aplicativo faz conversão de moeda de câmbio entre várias moedas do mundo
 * Escolha uma moeda de origem e de destino
 * coloque uma quantidade 
 
+## Acesse a aplicação 
+
+* Endereço do app de conversão de moeda: http://beda-exchange.herokuapp.com
+
 ## Contato
 #### Developer/Company
 * Homepage: http://www.bedabrazil.com
