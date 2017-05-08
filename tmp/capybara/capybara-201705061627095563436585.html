@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+
+    <link rel="stylesheet" media="all" href="/assets/application-887905bbb2822f5f0c3b890bc92721f58e57454be38f4620ddd2ad116140f2af.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-0859b18b9e6791929c0eedc7bbe8644a59bd9add9a827caa3c72b0d36ce3516e.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <div class="container">
+  <div class="row">
+    
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 offset-lg-1 exchange-box">
+      <div class="row">
+        <div class="logo-box">
+          <img class="img-responsive" src="/logo.png" alt="Logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="exchange-box">
+  <div class="card">
+    <div class="card-header text-center">
+      Simule sua conversão
+    </div>
+    <div class="card-block">
+      <form id="exchange_form" action="/exchange" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="local-currency">
+          <div class="form-group">
+            <p class="title">Moeda Local</p>
+            <select name="currency" id="currency" class="form-control"><option value="AUD">AUD</option>
+<option value="BGN">BGN</option>
+<option selected="selected" value="BRL">BRL</option>
+<option value="CAD">CAD</option>
+<option value="CHF">CHF</option>
+<option value="CNY">CNY</option>
+<option value="CZK">CZK</option>
+<option value="DKK">DKK</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="HKD">HKD</option>
+<option value="HRK">HRK</option>
+<option value="HUF">HUF</option>
+<option value="IDR">IDR</option>
+<option value="ILS">ILS</option>
+<option value="INR">INR</option>
+<option value="JPY">JPY</option>
+<option value="KRW">KRW</option>
+<option value="MXN">MXN</option>
+<option value="MYR">MYR</option>
+<option value="NOK">NOK</option>
+<option value="NZD">NZD</option>
+<option value="PHP">PHP</option>
+<option value="PLN">PLN</option>
+<option value="RON">RON</option>
+<option value="RUB">RUB</option>
+<option value="SEK">SEK</option>
+<option value="SGD">SGD</option>
+<option value="THB">THB</option>
+<option value="TRY">TRY</option>
+<option value="USD">USD</option>
+<option value="ZAR">ZAR</option></select>
+          </div>
+          <div class="form-group">
+            <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantidade($10)" min="1" step="0.01" />
+          </div>
+        </div>
+        <div class="destination-currency">
+          <div class="form-group">
+            <p class="title">Moeda Pretendida</p>
+            <select name="currency_destination" id="currency_destination" class="form-control"><option value="AUD">AUD</option>
+<option value="BGN">BGN</option>
+<option value="BRL">BRL</option>
+<option value="CAD">CAD</option>
+<option value="CHF">CHF</option>
+<option value="CNY">CNY</option>
+<option value="CZK">CZK</option>
+<option value="DKK">DKK</option>
+<option selected="selected" value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="HKD">HKD</option>
+<option value="HRK">HRK</option>
+<option value="HUF">HUF</option>
+<option value="IDR">IDR</option>
+<option value="ILS">ILS</option>
+<option value="INR">INR</option>
+<option value="JPY">JPY</option>
+<option value="KRW">KRW</option>
+<option value="MXN">MXN</option>
+<option value="MYR">MYR</option>
+<option value="NOK">NOK</option>
+<option value="NZD">NZD</option>
+<option value="PHP">PHP</option>
+<option value="PLN">PLN</option>
+<option value="RON">RON</option>
+<option value="RUB">RUB</option>
+<option value="SEK">SEK</option>
+<option value="SGD">SGD</option>
+<option value="THB">THB</option>
+<option value="TRY">TRY</option>
+<option value="USD">USD</option>
+<option value="ZAR">ZAR</option></select>
+          </div>
+          <div class="form-group">
+            <input type="text" name="result" id="result" class="form-control" placeholder="Resultado" readonly="readonly" />
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button name="button" type="button" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button>
+        </div>
+</form>    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="col-lg-7 offset-lg-1 hidden-md-down title-box">
+      <div class="row">
+        <h2 class="title">Converta facilmente suas moedas</h2>
+      </div>
+      <div class="row">
+        <h3 class="title">Para Qualquer moeda no Mundo!</h3>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
