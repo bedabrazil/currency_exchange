@@ -1,9 +1,24 @@
 body {
-    background: image-url('/bg-exchange.jpg') no-repeat center center fixed!important;
+    background: image-url('/bg-exchange.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: 1;
+}
+
+body:after {
+    content: "";
+    background: url('/overlay.png') repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
 }
 
 .title-box {
@@ -17,10 +32,22 @@ body {
 .exchange-box {
     margin: 10px auto;
     .logo-box {
+        background-color: #fff;
+        z-index: 100!important;
+        width: 150px;
+        height: 150px;
         margin: 0 auto;
-        padding-bottom: 10px;
+        position: relative;
+        border-radius: 4px;
     }
     .logo-img {
-        padding: 10px;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 200!important;
+        position: absolute;
+        padding: 0 5px 5px;
     }
 }
