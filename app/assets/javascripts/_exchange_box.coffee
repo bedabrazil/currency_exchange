@@ -51,3 +51,4 @@ $(document).ajaxStart ->
   $('#result').addClass('loading')
 $(document).ajaxStop ->
   $('#result').removeClass('loading')
+
